@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Penguin.Extensions.Configuration</name>
+        <name>Penguin.Extensions.Configuration.Local</name>
     </assembly>
     <members>
         <member name="M:Penguin.Extensions.Configuration.IConfigurationProviderExtensions.Get(Microsoft.Extensions.Configuration.IConfigurationProvider,System.String)">
