@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Penguin.Extensions.Configuration</name>
+    </assembly>
+    <members>
+        <member name="M:Penguin.Extensions.Configuration.IConfigurationProviderExtensions.Get(Microsoft.Extensions.Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Calls TryGet on an IConfiguration provider
+            </summary>
+            <param name="provider">The source provider</param>
+            <param name="key">The gey to search for</param>
+            <returns>The value (or null) of the key</returns>
+        </member>
+        <member name="M:Penguin.Extensions.Configuration.IConfigurationProviderExtensions.GetDictionary(Microsoft.Extensions.Configuration.IConfigurationProvider,System.String)">
+            <summary>
+            Returns a string value from an IConfigurationProvider as a Dictionary, assuming its delimited in Key=Value; notation
+            </summary>
+            <param name="provider">The provider to use as a source</param>
+            <param name="key">The Key to search for</param>
+            <returns>A dictionary representing the key value pairs found in the configuration value</returns>
+        </member>
+    </members>
+</doc>
