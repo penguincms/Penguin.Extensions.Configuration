@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Penguin.Extensions.Strings;
+using Penguin.Extensions.String;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 
