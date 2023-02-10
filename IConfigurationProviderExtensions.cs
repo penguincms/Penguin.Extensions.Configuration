@@ -20,14 +20,7 @@ namespace Penguin.Extensions.Configuration
         {
             Contract.Requires(provider != null);
 
-            if (provider.TryGet(key, out string value))
-            {
-                return value;
-            }
-            else
-            {
-                return null;
-            }
+            return provider.TryGet(key, out string value) ? value : null;
         }
 
         /// <summary>
@@ -40,14 +33,7 @@ namespace Penguin.Extensions.Configuration
         {
             string v = provider.Get(key);
 
-            if (v is null)
-            {
-                return null;
-            }
-            else
-            {
-                return v.ToDictionary();
-            }
+            return v?.ToDictionary();
         }
     }
 }
